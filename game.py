@@ -24,7 +24,7 @@ def check_find_value():
         input_value = input("Введите число: ")
         if not input_value.isnumeric():
             print("Вы ввели не число. Попробуйте снова: ")
-        elif not min_value < int(input_value) <= max_value:
+        elif not min_value <= int(input_value) <= max_value:
             print("Ваше число не диапазоне. Попробуйте снова")
         else:
             input_value = int(input_value)
