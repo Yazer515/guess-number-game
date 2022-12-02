@@ -21,14 +21,14 @@ def check_max_value():
 
 def check_find_value():
     while True:
-        max_value = input("Введите число: ")
-        if not max_value.isnumeric():
+        input_value = input("Введите число: ")
+        if not input_value.isnumeric():
             print("Вы ввели не число. Попробуйте снова: ")
-        elif not min_value < int(max_value) <= 100:
+        elif not min_value < int(input_value) <= max_value:
             print("Ваше число не диапазоне. Попробуйте снова")
         else:
-            max_value = int(max_value)
-            return max_value
+            input_value = int(input_value)
+            return input_value
             break
 
 
